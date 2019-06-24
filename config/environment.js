@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'calculatorApp',
+    modulePrefix: 'calculator',
     environment,
     rootURL: '/',
     locationType: 'auto',
