@@ -623,8 +623,8 @@
 });
 ;
 
-;define('calculatorApp/config/environment', [], function() {
-  var prefix = 'calculatorApp';
+;define('calculator/config/environment', [], function() {
+  var prefix = 'calculator';
 try {
   var metaName = prefix + '/config/environment';
   var rawConfig = document.querySelector('meta[name="' + metaName + '"]').getAttribute('content');
@@ -644,7 +644,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("calculatorApp/app")["default"].create({"name":"calculator","version":"0.0.0+60e672ec"});
+            require("calculator/app")["default"].create({"name":"calculator","version":"0.0.0+00838ee9"});
           }
         
 //# sourceMappingURL=calculator.map

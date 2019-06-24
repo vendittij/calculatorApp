@@ -373,8 +373,8 @@ define("calculator/tests/unit/routes/theme-test", ["qunit", "ember-qunit"], func
     });
   });
 });
-define('calculatorApp/config/environment', [], function() {
-  var prefix = 'calculatorApp';
+define('calculator/config/environment', [], function() {
+  var prefix = 'calculator';
 try {
   var metaName = prefix + '/config/environment';
   var rawConfig = document.querySelector('meta[name="' + metaName + '"]').getAttribute('content');
@@ -392,6 +392,6 @@ catch(err) {
 
 });
 
-require('calculatorApp/tests/test-helper');
+require('calculator/tests/test-helper');
 EmberENV.TESTS_FILE_LOADED = true;
 //# sourceMappingURL=tests.map
