@@ -44,7 +44,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    
+    ENV.baseURL = '/calculator';
+    ENV.locationType = 'hash';
   }
 
   return ENV;
