@@ -1,0 +1,32 @@
+<audio id="myAudio">
+  <source src="assets/sounds/beep.mp3" type="audio/mpeg">
+</audio>
+
+
+<form class="center">
+  <h3>{{this.theme}}</h3>
+
+  <input  value = {{this.number}} disabled> <br>
+
+  <button {{action "setNum" "c"}}>Clear</button>
+  <br>
+  <button {{action "setNum" "7"}}>7</button>
+  <button {{action "setNum" "8"}}>8</button>
+  <button {{action "setNum" "9"}}>9</button>
+  <button id="func" {{action "setNum" "*"}}>*</button>
+  <br>
+  <button {{action "setNum" "4"}}>4</button>
+  <button {{action "setNum" "5"}}>5</button>
+  <button {{action "setNum" "6"}}>6</button>
+  <button id="func" {{action "setNum" "-"}}>-</button>
+  <br>
+  <button {{action "setNum" "1"}}>1</button>
+  <button {{action "setNum" "2"}}>2</button>
+  <button {{action "setNum" "3"}}>3</button>
+  <button id="func" {{action "setNum" "+"}}>+</button>
+  <br>
+  <button {{action "setNum" "0"}}>0</button>
+  <button {{action "setNum" "."}}>.</button>
+  <button {{action "setNum" "="}}>=</button>
+  <button id="func" {{action "setNum" "/"}}>/</button>
+</form>

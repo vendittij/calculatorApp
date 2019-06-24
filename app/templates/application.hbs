@@ -1,5 +1,10 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
 
-{{outlet}}
+<body  class="Light">
+  <h1>Calculator App</h1>
+
+  <nav class = "links">
+    <p> {{#link-to "home"}} <button class="btn-nav"> Home  </button> {{/link-to}} </p>
+    <p> {{#link-to "theme"}} <button class="button"> Colors </button> {{/link-to}} </p>
+  </nav>
+  {{outlet}}
+</body>
