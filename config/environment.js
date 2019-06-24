@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'calculator',
+    modulePrefix: 'calculatorApp',
     environment,
     rootURL: '/',
     locationType: 'auto',
@@ -44,7 +44,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.baseURL = '/calculator';
+    ENV.baseURL = '/calculator/app';
     ENV.locationType = 'hash';
   }
 
