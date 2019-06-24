@@ -1,0 +1,46 @@
+$lightColor: #f1f3f2;
+$darkColor: #262626;
+$colorColor: #5B89F1;
+$colorFunc: #E34F45;
+
+.button{
+  padding: 15px  30px;
+  font-size: 18px;
+  border-radius: 9px;
+  margin: 5px;
+
+}
+
+button:active{
+  transform: translateY(4px);
+}
+
+button.light{
+    @extend .button;
+    background-color: $lightColor;
+    box-shadow: 5px 2.5px #585a56;
+}
+
+button.dark{
+    @extend .button;
+    background-color: $darkColor;
+    color: #f1e0d6;
+    box-shadow: 5px 2.5px #6600cc;
+    filter: saturate(40%);
+}
+
+button.colors{
+  @extend .button;
+  background-color: $colorColor;
+  border-color: #003d73;
+  outline-color: #E28176;
+  box-shadow: 5px 2.5px #585a56;
+}
+
+button.func{
+  @extend .button;
+  background-color: $colorFunc;
+  border-color: #003d73;
+  outline-color: #E28176;
+  box-shadow: 5px 2.5px #585a56;
+}
